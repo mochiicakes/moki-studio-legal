@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Moki Studio Privacy Policy</title>
+<style>
+  body { font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; max-width: 720px; margin: 0 auto; padding: 24px 16px 64px; color: #1f2328; background: #fff; }
+  h1 { font-size: 1.8rem; margin-bottom: 0; }
+  h2 { font-size: 1.2rem; margin-top: 2rem; }
+  .meta { color: #59636e; margin-top: 4px; }
+  a { color: #0b57d0; }
+  @media (prefers-color-scheme: dark) { body { color: #e6edf3; background: #0d1117; } .meta { color: #9198a1; } a { color: #7cacf8; } }
+</style>
+</head>
+<body>
+<h1>Moki Studio Privacy Policy</h1>
+<p class="meta">Effective 20 November 2026 · <a href="./">Moki Studio</a> · <a href="terms.html">Terms of Service</a></p>
+
+<h2>What Moki Studio is</h2>
+<p>Moki Studio is a personal, non-commercial tool run by one person (the "operator"). It edits short videos and publishes them to the operator's own social media accounts, only after the operator approves each post. It is not offered to the public, and it does not connect to anyone else's accounts.</p>
+
+<h2>Accounts it connects to</h2>
+<p>Moki Studio connects only to accounts the operator owns:</p>
+<ul>
+  <li>Instagram (professional account) and a Facebook Page, through Meta's APIs</li>
+  <li>YouTube, through the YouTube Data API (YouTube API Services)</li>
+  <li>TikTok, through TikTok's Login Kit and Content Posting API</li>
+</ul>
+<p>It uses these APIs to read basic profile information (account ID and name) and to upload and publish the operator's own videos with their captions. It does not read messages, followers' data or other people's content.</p>
+
+<h2>What it stores, and where</h2>
+<ul>
+  <li><strong>Login tokens</strong> for the accounts above, so it can post on the operator's behalf. They are kept on the operator's laptop and in the operator's private database (Supabase), never in public code.</li>
+  <li><strong>Videos, captions and thumbnails</strong> the operator creates, stored on the operator's laptop and in private Cloudflare R2 storage.</li>
+  <li><strong>Job records and cost logs</strong> (what was made, when, and how much the AI processing cost), stored in the operator's private Supabase database.</li>
+</ul>
+
+<h2>What it does not do</h2>
+<ul>
+  <li>It does not collect personal data from anyone other than the operator.</li>
+  <li>It does not sell, rent or share data with anyone.</li>
+  <li>It does not use advertising, analytics or tracking.</li>
+</ul>
+<p>Videos may be processed by service providers the tool depends on, only to do its job: Anthropic (Claude API) to help plan edits and write captions, Supabase for the database, and Cloudflare for file storage.</p>
+
+<h2>YouTube</h2>
+<p>Moki Studio uses YouTube API Services. By using its YouTube features you agree to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>, and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> applies to data handled by Google. You can revoke Moki Studio's access to a Google account at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+
+<h2 id="data-deletion">Data deletion</h2>
+<p>To disconnect an account and delete its data:</p>
+<ol>
+  <li>Revoke access from the platform:
+    <ul>
+      <li>Instagram: Settings → Website permissions (Apps and websites) → remove Moki Studio</li>
+      <li>Facebook: Settings &amp; privacy → Settings → Business integrations → remove Moki Studio</li>
+      <li>Google / YouTube: <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> → Moki Studio → remove access</li>
+      <li>TikTok: Settings and privacy → Security → Apps and services permissions → remove Moki Studio</li>
+    </ul>
+  </li>
+  <li>Email <a href="mailto:mochii.shoutcast@gmail.com">mochii.shoutcast@gmail.com</a> asking for deletion. Stored tokens, profile information, videos and logs for that account are deleted within 30 days, and you'll get a confirmation reply.</li>
+</ol>
+<p>Tokens stop working as soon as access is revoked on the platform, even before the stored copy is deleted.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the new version will be posted here with a new effective date.</p>
+
+<h2>Contact</h2>
+<p><a href="mailto:mochii.shoutcast@gmail.com">mochii.shoutcast@gmail.com</a></p>
+</body>
+</html>
